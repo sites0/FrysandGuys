@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: #f3a200;
+    padding: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+    width: 200vh;
+  }
+
+
+  .nav-links {
+    display: flex;
+    align-items: right;
+    text-decoration: underline black;
+  }
+  
+  .nav-links li {
+    list-style: none;
+    margin: 0 15px;
+   
+  }
+  .nav-links li a:hover{
+    color: rgb(246, 162, 7);
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .nav-links a::before {
+  
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:rgba(0, 0, 0, 0.863) ;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+  .nav-links a:hover::before {
+    transform: scaleX(1);
+  }
+  .header {
+    width:100vw;
+    height:100vh;
+    background-image: url(Screenshot\ \(65\).png);
+    background-position: bottom;
+    background-size: cover;
+  }
+  .test2{
+    width:100vw;
+    height:80vh;
+    background-image: url(Screenshot\ \(70\).png);
+    background-position: bottom;
+    background-size: cover;
+  }
+ 
+  .black-button {
+    background-color: rgba(247, 162, 5, 0.945);
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 90px;
+   
+  }
+  
+  .black-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  .head{
+    color: rgba(255, 204, 0, 0.863);
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+   /* cards */
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  
+  .card img {
+    width: 300px;
+    height: 300px;
+    transition: transform .5s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  
+  .card:hover .card-content {
+    opacity: 1;
+  }
+  
+  .card-content h2 {
+    margin: 0 0 10px;
+  }
+  
+  .card-content p {
+    margin: 0;
+  }
+  /* Responsive styles */
+.test2{
+  background-color: black;
+  height:600px;
+}
+
+.babun a{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  border:3px solid white;
+  padding: 7px 19px;
+  border-radius: 90px;
+  margin:top;
+  animation: fontAnimation 3s infinite;
+  background-color: transparent;
+}
+ /* Responsive of babun */
+.babun a:hover{
+  color: rgba(240, 240, 237, 0.457);
+}
+.heo {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 7px 19px;
+  border-radius: 90px;
+  margin:top;
+  animation: fontAnimation 3s infinite;
+  background-color: transparent;
+  border:1px solid white;
+  background-color:  rgba(82, 81, 78, 0.822);;
+}
+
+ /* third portion of image */
+ .test3 {
+  width:100vw;
+  height:100vh;
+  background-image: url(Screenshot\ \(66\).png);
+  background-position: bottom;
+  background-size: cover;
+}
+.down2{
+  font-family: 'Prompt';
+  color: white;
+  font-size: 150px;
+  text-align: left;
+  font: weight 600px;;
+  text-align: left;
+}
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  footer li {
+    margin: 0 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-media {
+    display: flex;
+  }
+  
+  .social-media a {
+    margin: 0 5px;
+  }
+  
+  .social-media a img {
+    height: 20px;
+  }
+ .about{
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  background-color: #252525;
+ }
+ .jk{
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  text-decoration: underline red;
+  background-color: #252525;
+ }
+ 
+.test4 {
+  width:100vw;
+  height:100vh;
+  background-image: url(Screenshot\ \(69\).png);
+  background-position: bottom;
+  background-size: cover;
+}
+@media (min-width: 375px) {
+  .header {
+ height: 100vh;
+ width: 230vh;
+  }
+  .navbar{
+    width:215vh;
+  }
+  .test3{
+    width: 230vh;
+  }
+  .test2{
+    width: 230vh;
+  }
+  .test4{
+    width: 230vh;
+  }
+  .about{
+    height: 100vh;
+  }
+}
+@media (min-width: 375px) {
+  .navbar {
+ width: 220vh;
+  }
+}
+@media (min-width: 360px) {
+  .navbar {
+ width: 220vh;
+  }
+  .header{
+    width: 233vh;
+  }
+  .test3{
+    width: 233vh;
+  }
+  .test2{
+    width: 233vh;
+  }
+  .test4{
+    width: 233vh;
+  }
+  .about{
+    height: 230vh;
+  }
+}
+@media (min-width: 400px) {
+  .about {
+ height: 100vh;
+  }
+}
