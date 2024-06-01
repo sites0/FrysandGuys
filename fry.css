@@ -306,3 +306,24 @@
  height: 100vh;
   }
 }
+@media (min-width: 1000px) {
+  .header {
+ height: 100vh;
+ width: 217vh;
+  }
+  .navbar{
+    width:217vh;
+  }
+  .test3{
+    width: 217vh;
+  }
+  .test2{
+    width: 217vh;
+  }
+  .test4{
+    width: 217vh;
+  }
+  .about{
+    height: 50vh;
+  }
+}
